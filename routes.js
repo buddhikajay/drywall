@@ -171,6 +171,12 @@ exports = module.exports = function(app, passport) {
   app.get('/account/settings/tumblr/callback/', require('./views/account/settings/index').connectTumblr);
   app.get('/account/settings/tumblr/disconnect/', require('./views/account/settings/index').disconnectTumblr);
 
+
+  //classroom
+  app.get('/classroom/student', require('./views/classroom/index').student);
+  app.get('/classroom/teacher/video', require('./views/classroom/index').teacherVideo);
+
+
   //route not found
   app.all('*', require('./views/http/index').http404);
 };
