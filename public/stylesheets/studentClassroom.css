@@ -1,16 +1,20 @@
 #videoContainer{
-    float: right;
-    width: 250px;
+    /*float: right;*/
+    position: absolute;
+    top: 10px;
+    right: 260px;
 }
 #localVideo{
     width: 50px;
     z-index: 10;
     position: absolute;
+    top:10px;
 
 }
 #remoteVideos{
     position: absolute;
     z-index: 1;
+    top:10px;
 }
 #remoteVideos video{
     width:250px;

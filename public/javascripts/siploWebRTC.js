@@ -1,3 +1,8 @@
+var videoWidth=1280;
+var videoHeight=720;
+if(myRole=='teacher'){
+
+}
 var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold "our" video
     localVideoEl: 'localVideo',
@@ -5,7 +10,16 @@ var webrtc = new SimpleWebRTC({
     remoteVideosEl: 'remoteVideos',
     // immediately ask for camera access
     autoRequestMedia: true,
-    url: 'http://'+location.hostname+':8889'
+    url: 'http://'+location.hostname+':8889',
+    media:{
+            audio:true,
+            video: {
+                width: {min: videoWidth, ideal: videoWidth, max: videoWidth},
+                height: {min: videoHeight, ideal: videoHeight, max:videoHeight},
+                frameRate: 13     // Shorthand for ideal.
+            }
+
+    }
 });
 
 // we have to wait until it's ready

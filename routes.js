@@ -175,6 +175,7 @@ exports = module.exports = function(app, passport) {
   //classroom
   app.get('/classroom/student', require('./views/classroom/index').student);
   app.get('/classroom/teacher/video', require('./views/classroom/index').teacherVideo);
+  app.get('/classroom/teacher/whiteboard', require('./views/classroom/index').teacherWhiteboard);
 
 
   //route not found

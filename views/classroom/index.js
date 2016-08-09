@@ -4,3 +4,6 @@ exports.student = function(req, res){
 exports.teacherVideo = function(req, res){
     res.render('classroom/teacherVideo');
 };
+exports.teacherWhiteboard = function(req, res){
+    res.render('classroom/teacherWhiteboard');
+};

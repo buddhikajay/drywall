@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+#top-logo{
+
+  position:absolute;
+  top:5px;
+  left:5px;
+  z-index:100;
+}
+#classroom{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 98vh;
+  width: 99vw;
+}

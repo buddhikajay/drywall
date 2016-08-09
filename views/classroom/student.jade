@@ -1,14 +1,17 @@
-doctype html
-html(lang="en")
-    head
-        title= 'Classroom:Student'
-        script(type='text/javascript').
-            var myRole = 'student';
-        script(src="/vendor/simpleWebRTC/simplewebrtc.bundle.js")
-        script(src="/javascripts/siploWebRTC.js")
+extends layout
+block stylesheets
+    script(type='text/javascript').
+        var myRole = 'student';
+    script(src="/vendor/simpleWebRTC/simplewebrtc.bundle.js")
+    script(src="/javascripts/siploWebRTC.js")
 
-        link(href='/stylesheets/studentClassroom.css', rel='stylesheet')
-    body
-        #videoContainer
-            video#localVideo
-            #remoteVideos
+    link(href='/stylesheets/studentClassroom.css', rel='stylesheet')
+
+block content
+    #videoContainer
+        video#localVideo
+        #remoteVideos
+    #classroom
+        iframe(type='text/html' width='100%' height='100%'
+        src='https://siplo.lk:9002/whiteboard/123'
+        frameborder='0')
