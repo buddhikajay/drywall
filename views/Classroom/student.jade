@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        title= 'Classroom:Student'
+        script(type='text/javascript').
+            var myRole = 'student';
+        script(src="/vendor/simpleWebRTC/simplewebrtc.bundle.js")
+        script(src="/javascripts/siploWebRTC.js")
+
+        link(href='/stylesheets/studentClassroom.css', rel='stylesheet')
+    body
+        #videoContainer
+            video#localVideo
+            #remoteVideos

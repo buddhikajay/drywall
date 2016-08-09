@@ -1,0 +1,17 @@
+#videoContainer{
+    float: right;
+    width: 250px;
+}
+#localVideo{
+    width: 50px;
+    z-index: 10;
+    position: absolute;
+
+}
+#remoteVideos{
+    position: absolute;
+    z-index: 1;
+}
+#remoteVideos video{
+    width:250px;
+}
